@@ -144,7 +144,7 @@
                                         <rect key="frame" x="0.0" y="114" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Qu-oj-c3t" id="3sa-q9-Kib">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ig-0c-coh">
@@ -199,7 +199,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZFt-1I-Udf">
                             <connections>
-                                <segue destination="HMv-ac-zmV" kind="unwind" unwindAction="savePlayerDetail:" id="lTD-sx-AFi"/>
+                                <segue destination="HMv-ac-zmV" kind="unwind" identifier="SavePlayerDetail" unwindAction="savePlayerDetail:" id="lTD-sx-AFi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

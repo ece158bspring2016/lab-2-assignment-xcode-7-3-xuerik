@@ -9,6 +9,7 @@
 import UIKit
 
 class PlayerDetailsViewController: UITableViewController {
+    var player:Player?
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var detailLabel: UILabel!
@@ -38,4 +39,14 @@ class PlayerDetailsViewController: UITableViewController {
             nameTextField.becomeFirstResponder()
         }
     }
+    
+    /*
+     * Saves the user input player name
+     */
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "SavePlayerDetail" {
+            player = Player(name: nameTextField.text!, game: "Chess", rating: 1)
+        }
+    }
+    
 }
